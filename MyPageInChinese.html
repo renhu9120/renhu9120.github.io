@@ -19,6 +19,7 @@
     <meta name=theme-color content="#ffffff">
     <link rel=webmention href=https://webmention.io/hugocisneros.com/webmention>
     <link rel=pingback href=https://webmention.io/hugocisneros.com/xmlrpc>
+    <script>function updateMode() { localStorage.theme === "dark" || !("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches ? document.documentElement.classList.add("dark") : document.documentElement.classList.remove("dark") } function toggleMode() { localStorage.theme === "dark" ? localStorage.theme = "light" : localStorage.theme = "dark", updateMode() } window.onload = updateMode(); function toggleMenu() { let e = document.getElementById("navbar-default"); e.classList.contains("hidden") ? e.classList.remove("hidden") : e.classList.add("hidden") }</script>
 </head>
 
 <body>
@@ -37,7 +38,7 @@
                 <div class="hidden w-full md:block md:w-auto" id=navbar-default>
                     <ul class="grid md:grid-flow-col items-center justify-between text-lg my-2.5">
                         <li class="p-2.5 md:first:pl-0 md:border-none border-b dark:border-zinc-500 list-none">
-                            <a class="text-zinc-600 dark:text-zinc-300 hover:border-b-0" href="MyPage.html" />
+                            <a class="text-zinc-600 dark:text-zinc-300 hover:border-b-0" href="index.html" />
                             Main
                             </a>
                         </li>
@@ -48,6 +49,11 @@
                         <li class="p-2.5 md:first:pl-0 md:border-none border-b dark:border-zinc-500 list-none">
                             <a class="text-zinc-600 dark:text-zinc-300 hover:border-b-0" href="MyPageAbout.html" />
                             About
+                            </a>
+                        </li>
+                        <li class="p-2.5 md:first:pl-0 md:border-none border-b dark:border-zinc-500 list-none">
+                            <a class="text-zinc-600 dark:text-zinc-300 hover:border-b-0" href="BVPMain.html" />
+                            Conference Web
                             </a>
                         </li>
                     </ul>
@@ -157,7 +163,6 @@
         </ul>
 
     </main>
-
 
     <footer class="footer container h-10 text-center mt-1">
         <hr class=my-4>

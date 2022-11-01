@@ -19,6 +19,7 @@
     <meta name=theme-color content="#ffffff">
     <link rel=webmention href=https://webmention.io/hugocisneros.com/webmention>
     <link rel=pingback href=https://webmention.io/hugocisneros.com/xmlrpc>
+    <script>function updateMode() { localStorage.theme === "dark" || !("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches ? document.documentElement.classList.add("dark") : document.documentElement.classList.remove("dark") } function toggleMode() { localStorage.theme === "dark" ? localStorage.theme = "light" : localStorage.theme = "dark", updateMode() } window.onload = updateMode(); function toggleMenu() { let e = document.getElementById("navbar-default"); e.classList.contains("hidden") ? e.classList.remove("hidden") : e.classList.add("hidden") }</script>
 </head>
 
 <body>
@@ -37,7 +38,7 @@
                 <div class="hidden w-full md:block md:w-auto" id=navbar-default>
                     <ul class="grid md:grid-flow-col items-center justify-between text-lg my-2.5">
                         <li class="p-2.5 md:first:pl-0 md:border-none border-b dark:border-zinc-500 list-none">
-                            <a class="text-zinc-600 dark:text-zinc-300 hover:border-b-0" href="MyPage.html" />
+                            <a class="text-zinc-600 dark:text-zinc-300 hover:border-b-0" href="index.html" />
                             Main
                             </a>
                         </li>
@@ -50,11 +51,17 @@
                             About
                             </a>
                         </li>
+                        <li class="p-2.5 md:first:pl-0 md:border-none border-b dark:border-zinc-500 list-none">
+                            <a class="text-zinc-600 dark:text-zinc-300 hover:border-b-0" href="BVPMain.html" />
+                            Conference Web
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+
     <main class="content h-card container mt-2 m-auto leading-loose md:px-0 px-2 z-0 Page(/_index.md)" role=main>
         <h1>
             About
@@ -74,6 +81,30 @@
         </picture>
     </main>
 
+    <footer class="footer container h-10 text-center mt-1">
+        <hr class=my-4>
+        <ul class="pl-0 mt-1">
+            <li class="ml-2 first:before:content-none before:content-['•'] inline-block list-none">
+                Web Code source:
+                <a class="ml-2 text-neutral-800 dark:text-neutral-400 border-none"
+                    href=https://github.com/hugcis/hugo-astatine-theme>
+                    Astatine
+                </a>
+            </li>
+            <li class="ml-2 first:before:content-none before:content-['•'] 
+                    text-neutral-800 dark:text-neutral-400 inline-block list-none">
+                <span class=ml-2>
+                    © Ren Hu 2022
+                </span>
+            </li>
+            <li class="ml-2 first:before:content-none before:content-['•'] 
+                    text-neutral-800 dark:text-neutral-400 inline-block list-none">
+                <span class=ml-2>
+                    MIT License
+                </span>
+            </li>
+        </ul>
+    </footer>
 </body>
 
 </html>
