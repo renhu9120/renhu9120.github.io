@@ -226,6 +226,7 @@
     </footer>
 
 
+    <script>function toggleModal(e) { return t => { (t.target.id.startsWith("#open-modal") || t.target.id.startsWith("#close-modal") || t.target.classList.contains("open-modal")) && (t.stopPropagation(), e.classList.toggle("invisible"), e.classList.toggle("pointer-events-auto"), document.body.classList.toggle("pointer-events-none")) } } var list = document.getElementsByClassName("open-modal"), id, modWin, closeButton, clipboardCopyButtons; for (let e of list) id = e.attributes["data-target"].textContent, modWin = document.getElementById(id), closeButton = document.getElementById(id.replace("open", "close")), e.addEventListener("click", toggleModal(modWin)), closeButton.addEventListener("click", toggleModal(modWin)), modWin.addEventListener("click", toggleModal(modWin)); clipboardCopyButtons = document.getElementsByClassName("modal-copy-citation"); for (let e of clipboardCopyButtons) { let t = e.id.replace("#copy-", ""), n = document.getElementById(t); e.addEventListener("click", function (e) { return function () { if (!e) { var t = this.innerHTML; navigator.clipboard.writeText(n.innerHTML).then(() => { this.innerHTML = "Copied!", this.disabled = !0 }, () => { this.innerHTML = "Error copying!" }), e = !0, setTimeout(function () { this.innerHTML = t, this.disabled = !1, e = !1 }.bind(this), 1e3) } } }(!1), this) }</script>
 </body>
 
 </html>
