@@ -26,9 +26,11 @@
         <nav>
             <div class="container flex flex-wrap justify-between items-center mx-auto">
                 <button type=button onclick=toggleMenu()
-                    class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+                    class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls=navbar-default aria-expanded=false>
                     <span class=sr-only>Open main menu</span>
-                    <svg class="w-6 h-6" fill="currentcolor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="w-6 h-6" aria-hidden="true" fill="currentcolor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd"
                             d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4A1 1 0 013 5zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
                             clip-rule="evenodd" />
@@ -37,21 +39,26 @@
                 <div class="hidden w-full md:block md:w-auto" id=navbar-default>
                     <ul class="grid md:grid-flow-col items-center justify-between text-lg my-2.5">
                         <li class="p-2.5 md:first:pl-0 md:border-none border-b dark:border-zinc-500 list-none">
-                            <a class="text-zinc-600 dark:text-zinc-300 hover:border-b-0" href="index.html" />
+                            <a class="text-zinc-600 dark:text-zinc-300 hover:border-b-0"
+                                href="index.html"/>
                             Main
                             </a>
                         </li>
                         <li class="p-2.5 md:first:pl-0 md:border-none border-b dark:border-zinc-500 list-none">
                             <a class="text-zinc-600 dark:text-zinc-300 hover:border-b-0"
-                                href="MyPageInChinese.html" />中文</a>
+                                href="MyPageInChinese.html"/>
+                            中文
+                            </a>
                         </li>
                         <li class="p-2.5 md:first:pl-0 md:border-none border-b dark:border-zinc-500 list-none">
-                            <a class="text-zinc-600 dark:text-zinc-300 hover:border-b-0" href="MyPageProject.html" />
+                            <a class="text-zinc-600 dark:text-zinc-300 hover:border-b-0"
+                                href="MyPageProject.html"/>
                             Project
                             </a>
                         </li>
                         <li class="p-2.5 md:first:pl-0 md:border-none border-b dark:border-zinc-500 list-none">
-                            <a class="text-zinc-600 dark:text-zinc-300 hover:border-b-0" href="MyPageAbout.html" />
+                            <a class="text-zinc-600 dark:text-zinc-300 hover:border-b-0"
+                                href="MyPageAbout.html"/>
                             About
                             </a>
                         </li>
@@ -165,7 +172,8 @@
         <h1 id=publications>Publications</h1>
         <ul>
             <li>
-                Hu, R., Radon type transform in Clifford analysis, Ghent University, Ghent, Belgium (2021). <i>(Doctoral disserataion)</i> 
+                Hu, R., Radon type transform in Clifford analysis, Ghent University, Ghent, Belgium (2021). <i>(Doctoral
+                    disserataion)</i>
             </li>
             <li>
                 Guzmán Adán, A., Hu, R., Raeymaekers, T. & Sommen, F. Szegö -Radon transform for hypermonogenic
@@ -180,7 +188,8 @@
                 Clifford Algebras 29, 87 (2019).
             </li>
             <li>
-                Hu, R., Iterative Solution of Nonlinear Singular Integral Equation, Tianjin University of Technology and Eductaion, Tianjin, China (2017). <i>(Master disserataion)</i> 
+                Hu, R., Iterative Solution of Nonlinear Singular Integral Equation, Tianjin University of Technology and
+                Eductaion, Tianjin, China (2017). <i>(Master disserataion)</i>
             </li>
             <li>
                 Hu R., Liu H., Study of Joukowski transform and its inverse. Journal of Tianjin University of Technology
