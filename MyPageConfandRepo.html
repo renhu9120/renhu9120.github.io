@@ -26,6 +26,17 @@
     <script>function updateMode() { localStorage.theme === "dark" || !("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches ? document.documentElement.classList.add("dark") : document.documentElement.classList.remove("dark") } function toggleMode() { localStorage.theme === "dark" ? localStorage.theme = "light" : localStorage.theme = "dark", updateMode() } window.onload = updateMode(); function toggleMenu() { let e = document.getElementById("navbar-default"); e.classList.contains("hidden") ? e.classList.remove("hidden") : e.classList.add("hidden") }</script>
 </head>
 
+
+<style>
+    ol li {
+
+        list-style-type: decimal;
+
+        list-style-position: inside;
+
+    }
+</style>
+
 <body>
     <header class="md:px-0 px-2">
         <nav>
@@ -75,23 +86,56 @@
     </header>
     <main class="content h-card container mt-2 m-auto leading-loose md:px-0 px-2 z-0 Page(/_index.md)" role=main>
         <h1>
-            About
+            Conferences:
         </h1>
-        <span>
-            Website template: <a href="https://hugcis.github.io/hugo-astatine-theme/">hugo-astatine-theme</a>
-        </span>
+        <ol>
+            <li>
+                复分析与Clifford分析理论与应用国际学术研讨会 (CCATA 2022)   时间: 2022年8月7-9日; 地点: 天津中德应用技术大学，天津; 
+            </li>
+            <li>
+                解析函数空间国际研讨会  时间: 2022年8月15-19日; 广东工业大学，广州; 
+            </li>
+            <li>
+                分析、应用及计算国际学会 (13th International ISAAC Congress)    时间: 2021年8月2-6日; 地点: 根特大学 (Ghent University)，比利时; 
+            </li>
+            <li>
+                Clifford代数及其在数学物理中的应用国际年会 (The ICCA2020)   时间: 2020年8月3-7日; 地点: 中国科学技术大学，合肥; 
+
+            </li>
+            <li>
+                分析、应用及计算国际学会 (12th International ISAAC Congress)    时间: 2019年7月29-8月2日; 地点: 阿威罗大学 (Universidade de Aveiro)，葡萄牙; 
+
+            </li>
+            <li>
+                算子理论及应用国际研讨会 (IWOTA2019)    时间: 2019年7月22-26日; 地点: 里斯本大学 (Universidade de Lisboa)，葡萄牙; 
+            </li>
+            <li>
+                高维空间函数论学术会议 (Function Theories in Higher Dimensions) 时间: 2018年8月20-24日; 地点: 坦佩雷大学 (Tampereen yliopisto)，芬兰; 
+            </li>
+            <li>
+                复分析与复几何暑期讨论班    时间: 2017年7月18-30日; 宁夏大学，银川; 
+            </li>
+            <li>
+                第十七次全国“积分议程、边值问题及其应用”学术会议    时间: 2016年7月16-19日; 南宁师范大学，南宁; 
+            </li>
+            <li>
+                全国多复变学术年会  时间: 2015年8月28-29日; 湖州师范学院，湖州; 
+            </li>
+        </ol>
+
         <h1>
-            WeChat Official Account
+            Reports
         </h1>
-        <span>
-            数学兴趣小组
-        </span>
-        <picture>
-            <source srcset="My pics\QR wechat account.jpg"><img class="main-image u-photo mx-auto" itemprop=contentUrl
-                alt="QR picture" src="My pics\QR wechat account.jpg">
-        </picture>
+        <ol>
+            <li>
+                安徽大学数学科学学院    时间: 2022年10月18日; 合肥; 
+            </li>
+            <li>
+                天津师范大学数学科学学院    时间: 2021年09月16日; 天津; 
+            </li>
+        </ol>
     </main>
-    
+
     <footer class="footer container h-10 text-center mt-1">
         <hr class=my-4>
         <ul class="pl-0 mt-1">
