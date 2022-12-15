@@ -26,6 +26,16 @@
     <script>function updateMode() { localStorage.theme === "dark" || !("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches ? document.documentElement.classList.add("dark") : document.documentElement.classList.remove("dark") } function toggleMode() { localStorage.theme === "dark" ? localStorage.theme = "light" : localStorage.theme = "dark", updateMode() } window.onload = updateMode(); function toggleMenu() { let e = document.getElementById("navbar-default"); e.classList.contains("hidden") ? e.classList.remove("hidden") : e.classList.add("hidden") }</script>
 </head>
 
+
+<style>
+    #gifctrl{
+        display: inline-block;
+        width: 360px;
+        height: 270px;
+        margin: 10px;
+    }
+</style>
+
 <body>
     <header class="md:px-0 px-2">
         <nav>
@@ -55,7 +65,7 @@
                         </li>
                         <li class="p-2.5 md:first:pl-0 md:border-none border-b dark:border-zinc-500 list-none">
                             <a class="text-zinc-600 dark:text-zinc-300 hover:border-b-0" href="MyPageProject.html" />
-                            Project
+                            Some Projects
                             </a>
                         </li>
                         <li class="p-2.5 md:first:pl-0 md:border-none border-b dark:border-zinc-500 list-none">
